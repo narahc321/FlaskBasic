@@ -10,7 +10,7 @@ app = Flask(__name__)
 # config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'cherry'
+app.config['MYSQL_PASSWORD'] = 'iiita123'
 app.config['MYSQL_DB'] = 'myflaskapp'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
@@ -264,6 +264,7 @@ def delete_article(id):
 
     flash('Article Deleted', 'success')
     return redirect(url_for('dashboard'))
+
 if __name__ == '__main__':
     app.secret_key='secret123'
     app.run(debug=True)
